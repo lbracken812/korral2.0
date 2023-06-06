@@ -1,0 +1,19 @@
+@import '@fontsource/dm-sans';
+@import '@fontsource/dm-sans/700';
+@import '@fontsource/dm-sans/400';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI',
+		Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* Only do the FLIP-style animations when no reduced-motion preference */
+/* @media (prefers-reduced-motion: no-preference) { */
+[style*='--tag'] {
+	view-transition-name: var(--tag);
+}
+/* } */
